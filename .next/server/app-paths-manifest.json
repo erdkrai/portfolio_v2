@@ -1,1 +1,5 @@
-{}
+{
+  "/studio/[[...tool]]/page": "app/studio/[[...tool]]/page.js",
+  "/(main)/page": "app/(main)/page.js",
+  "/(main)/[slug]/page": "app/(main)/[slug]/page.js"
+}
