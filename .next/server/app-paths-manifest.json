@@ -1,5 +1,12 @@
 {
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/api/draft-mode/disable/route": "app/api/draft-mode/disable/route.js",
+  "/api/draft-mode/enable/route": "app/api/draft-mode/enable/route.js",
+  "/api/newsletter/route": "app/api/newsletter/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/studio/[[...tool]]/page": "app/studio/[[...tool]]/page.js",
   "/(main)/page": "app/(main)/page.js",
+  "/(main)/blog/[slug]/page": "app/(main)/blog/[slug]/page.js",
   "/(main)/[slug]/page": "app/(main)/[slug]/page.js"
 }

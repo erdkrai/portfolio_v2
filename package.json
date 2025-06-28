@@ -36,7 +36,7 @@
     "prism-react-renderer": "^2.4.1",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-hook-form": "^7.56.1",
+    "react-hook-form": "^7.59.0",
     "react-player": "^2.16.0",
     "resend": "^4.4.0",
     "sanity": "^3.86.0",

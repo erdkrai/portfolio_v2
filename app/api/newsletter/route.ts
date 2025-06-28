@@ -1,13 +1,21 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export const POST = async (request: Request) => {
   const { email } = await request.json();
 
+  // Check if API key is configured
+  if (!process.env.RESEND_API_KEY) {
+    return Response.json(
+      { error: "Newsletter service not configured" },
+      { status: 500 }
+    );
+  }
+
+  const resend = new Resend(process.env.RESEND_API_KEY);
+
   // Create contact
   try {
-    resend.contacts.create({
+    await resend.contacts.create({
       email,
       unsubscribed: false,
       audienceId: process.env.RESEND_AUDIENCE_ID!,
